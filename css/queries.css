@@ -1,0 +1,226 @@
+@media (min-width: 411px) {
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .hero-title {
+    font-size: 7.2rem;
+  }
+  .main-nav {
+    font-size: 1.6rem;
+  }
+  .about-wrapper {
+    position: relative;
+  }
+  .about-content {
+    text-align: left;
+    background-color: white;
+    padding: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    bottom: -40%;
+    width: 60%;
+  }
+  .about-description {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .header {
+    background: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+  }
+  .main-nav {
+    position: unset;
+    background-color: transparent;
+    width: unset;
+    height: unset;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: unset;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    flex-direction: row;
+    padding: 0;
+    gap: 2.4rem;
+    transform: translateX(0);
+  }
+  .nav-inner {
+    display: none;
+  }
+  .open-menu {
+    display: none;
+  }
+  /**************************/
+  /*     HERO SECTION      */
+  /**************************/
+  .hero-title {
+    font-size: 7.2rem;
+  }
+
+  .section-hero {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+  }
+  .section-hero > div {
+    flex-basis: 50%;
+  }
+
+  /**************************/
+  /*     About SECTION      */
+  /**************************/
+
+  .section-about {
+    padding: 12rem 6rem;
+  }
+  .about-img {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .about-wrapper {
+    position: relative;
+  }
+  .about-content {
+    text-align: left;
+    background-color: white;
+    padding: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    bottom: -10%;
+    width: 55%;
+  }
+  .about-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
+    color: var(--black);
+    margin-bottom: 3rem;
+  }
+  .about-description {
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+  }
+
+  /**************************/
+  /*     Creations SECTION      */
+  /**************************/
+  .text-center {
+    text-align: left;
+  }
+  .grid-wrapper {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+  }
+  .grid-wrapper div {
+    height: 500px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  .grid-wrapper div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--very-dark-gray);
+    opacity: 0.2;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .grid-wrapper div:hover::before {
+    opacity: 0.7;
+  }
+  .grid-wrapper div:first-child {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(2) {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(3) {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(4) {
+    background-image: url("../images/desktop/image-grid.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(5) {
+    background-image: url("../images/desktop/image-from-above.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(6) {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(7) {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+    background-size: cover;
+  }
+  .grid-wrapper div:nth-child(8) {
+    background-image: url("../images/desktop/image-fisheye.jpg");
+    background-size: cover;
+  }
+  .creation-title {
+    position: absolute;
+    bottom: 20px;
+  }
+  span {
+    display: block;
+  }
+  .btn {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid var(--very-dark-gray);
+    padding: 2rem 4rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  /**************************/
+  /*     Footer SECTION   */
+  /**************************/
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .footer-nav {
+    flex-direction: row;
+  }
+}
